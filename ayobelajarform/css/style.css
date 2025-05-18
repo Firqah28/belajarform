@@ -1,0 +1,69 @@
+
+/* Menu Navigasi */
+#menu {
+    background-color: #00bfa5; /* Warna latar belakang menu */
+    padding: 20px 0; /* Padding atas dan bawah */
+}
+
+footer {
+    background-color: #00bfa5; /* Warna latar belakang menu */
+    padding: 20px 0; /* Padding atas dan bawah */
+    text-align:center;
+}
+
+#menu ul {
+    list-style-type: none; /* Menghapus bullet list */
+    max-width: 1200px; /* Maksimal lebar menu */
+    margin: 0 auto; /* Center menu */
+    display: flex; /* Flexbox untuk menu */
+    align-items: center; /* Center secara vertikal */
+}
+
+#heading {
+    margin : 0 25px;
+    display: flex;
+    font-size: 2rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Tebal */
+    color: white; /* Warna teks */
+}
+
+nav {
+    display: flex;
+    justify-content : space-between;
+}
+
+#menu li {
+    position: relative; /* Untuk submenu */
+}
+
+#menu a {
+    justify-content:center;
+    color: white; /* Warna teks link */
+    text-decoration: none; /* Menghapus garis bawah */
+    padding: 10px 15px; /* Padding link */
+}
+
+#menu a:hover {
+    background-color: #ffeb3b; /* Warna latar saat hover */
+    border-radius: 5px; /* Sudut melengkung */
+}
+
+
+#menu ul ul {
+    display: none; /* Sembunyikan submenu */
+    position: absolute; /* Posisi absolut untuk submenu */
+    top: 100%; /* Menempatkan submenu di bawah menu */
+    left: 0; /* Menempel pada menu induk */
+    background-color: #00bfa5; /* Warna latar belakang submenu */
+    padding: 10px 0; /* Padding submenu */
+    z-index: 1000; /* Pastikan submenu di atas elemen lain */
+}
+
+#menu li:hover > ul {
+    display: block; 
+}
+
+#menu ul ul li {
+    width: 200px; 
+}
+
